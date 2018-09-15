@@ -53,6 +53,6 @@ def add_s(arr)
   #   arr[i] << 's' if i != 1
   #   i += 1
   # end
-  # arr this works but lets try chaining each_with_index
+  # arr   this works but lets try each_with_index
   arr.each_with_index {|word, index| word << 's' if index != 1}
 end
