@@ -55,5 +55,5 @@ def add_s(arr)
   # end
   # arr #this works but lets try each_with_index
   arr.each_with_index { |word, index| word << 's' if index != 1}
-  arr.each_with_index.collect {|word, index| index != 1 ? word + 's' : word}
+  # arr.each_with_index.collect {|word, index| index != 1 ? word + 's' : word}
 end
