@@ -48,10 +48,11 @@ def sum_array(arr)
 end
 
 def add_s(arr)
-  i = 0
-  while i < arr.length
-    arr[i] << 's' if i != 1
-    i += 1
-  end
-  arr
+  # i = 0
+  # while i < arr.length
+  #   arr[i] << 's' if i != 1
+  #   i += 1
+  # end
+  # arr this works but lets try chaining each_with_index
+  arr.each_with_index {|word, index| word << 's' if index != 1}
 end
