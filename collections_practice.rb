@@ -44,7 +44,7 @@ def sum_array(arr)
   # sum this works but lets try .inject
   # arr.inject {|sum, n| sum + n}
   # arr.reduce(:+)
-  arr.inject(:+)
+  arr.inject(:+) #inject == reduce
 end
 
 def add_s(arr)
