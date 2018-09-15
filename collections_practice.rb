@@ -41,7 +41,7 @@ end
 def sum_array(arr)
   # sum = 0
   # arr.each {|i| sum += i}
-  # sum this works but lets try .inject
+  # sum #this works but lets try .inject
   # arr.inject {|sum, n| sum + n}
   # arr.reduce(:+)
   arr.inject(:+) #inject == reduce
@@ -53,6 +53,6 @@ def add_s(arr)
   #   arr[i] << 's' if i != 1
   #   i += 1
   # end
-  # arr   this works but lets try each_with_index
+  # arr #this works but lets try each_with_index
   arr.each_with_index {|word, index| word << 's' if index != 1}
 end
